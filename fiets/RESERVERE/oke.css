@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{ 
+background: url(Rent.jpg) no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+width: auto;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+    position: fixed;
+    margin-top: -25px;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+.logo{
+    font-family: fantasy;
+    font-style: italic;
+}
+
+nav ul{
+
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+
+}
+
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#titel {
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+.hoofdtitel{
+    margin-top: -40px;
+    padding-bottom: 35px;
+}
+
+#titel {
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    padding: 0px 195px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.container1{
+    margin-top: 65px;
+    padding: 45px 65px;
+    border-radius: 25px;
+}
+
+.soort input, .type input, .voornaam input, .achternaam input, .telefoon input, .email input, .tijd input, .adres input , .huisnummer_toevoeging input {
+    width: 300px;
+    padding: 8px ;
+    border-radius: 10px;    
+}
+
+.soort label, .type label, .voornaam label, .achternaam label, .telefoon label, .email label , .adres label , .huisnummer_toevoeging label {
+    padding: 8px ;
+    width: 300px;
+    color: white;
+}
+
+.soort{
+    display: flex;
+    justify-content: center;
+}
+
+.type{
+    display: flex;
+    justify-content: center;
+}
+
+.voornaam {
+    display: flex;
+    justify-content: center;
+}
+
+.soort {
+    display: flex;
+    justify-content: center;
+}
+
+.achternaam {
+    display: flex;
+    justify-content: center;
+}
+
+.telefoon {
+    display: flex;
+    justify-content: center;
+}
+
+.adres {
+    display: flex;
+    justify-content: center;
+}
+
+.huisnummer_toevoeging {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.datum {
+    display: flex;
+    justify-content: center;
+}
+
+#datum {
+    width: 305px;
+}
+
+#datum{
+    margin-left: -3px;
+    width: 305px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.datum label {
+    padding: 5px;
+    color: white;
+}
+
+.tijd {
+    display: flex;
+    justify-content: center;
+}
+
+.tijd input{
+    padding: 5px;
+    padding-left: 15px;
+}
+
+#tijd{
+    width: 295px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 6px;
+}
+
+fieldset{
+    padding: 15px 100px ;
+    background-color: black;
+    border-radius: 35px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+    padding: 10px 65px;
+    color: white;
+    background-color: rgb(5, 8, 209);
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 1.5s;
+}
+
+#button:hover{
+    background-color: rgb(4, 23, 110);
+    transition: 1s;
+}
+
+
+@media (max-width: 1048px){
+
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav{
+        position: fixed;
+        margin-top: -25px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 909px){
+    #icon{
+        padding-right: 10px;
+    }
+
+    nav #icon{
+        display: block;
+    }
+
+    .active,a:hover{
+        border: none;
+    }
+
+    nav ul{
+        margin-right: -0px;
+        position: fixed;
+        width: 100%;
+        height: 45vh;
+        background: #2f3640;
+        right: -100%;
+        text-align: center;
+        transition: all 0.4s;
+    }
+
+    nav li {
+        display: block;
+        padding: 25px 0px;
+        line-height: 25px;
+    }
+
+    nav li:hover a{
+    color: black;
+    transition: 2s;
+    }
+
+    nav li:hover{
+    background-color: white;
+    transition: 2s;
+    }
+    
+    nav a{
+        font-size: 20px;
+    }
+
+    a.active{
+        border: none;
+    }
+
+   nav ul.show{
+       right: 0;
+   }
+
+}
+
+@media only screen and (max-width: 990px){
+    .soort{
+        width: 500px;
+    }
+
+    .type{
+        width: 500px;
+    }
+
+    .voornaam{
+        width: 500px;
+    }
+
+    .achternaam{
+        width: 500px;
+    }
+
+    .telefoon{
+        width: 500px;
+    }
+
+    .adres{
+        width: 500px;
+    }
+
+    .huisnummer_toevoeging{
+        width: 500px;
+    }
+
+    .email{
+        width: 500px;
+    }
+
+    .datum{
+        width: 500px;
+    }
+
+    .tijd{
+        width: 500px;
+    }
+
+    fieldset{
+        padding: 15px 100px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    fieldset{
+        padding: 15px 100px;
+    }
+
+    .soort{
+        width: 350px;
+    }
+
+    .type{
+        width: 350px;
+    }
+
+    .voornaam{
+        width: 350px;
+    }
+
+    .achternaam{
+        width: 350px;
+    }
+
+    .telefoon{
+        width: 350px;
+    }
+
+    .adres{
+        width: 350px;
+    }
+
+    .huisnummer_toevoeging{
+        width: 350px;
+    }
+
+    .email{
+        width: 350px;
+    }
+
+    .datum{
+        width: 350px;
+    }
+
+    .tijd{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    fieldset{
+        padding: 15px 50px;
+    }
+
+    .soort{
+        width: 300px;
+    }
+
+    .type{
+        width: 300px;
+    }
+
+    .voornaam{
+        width: 300px;
+    }
+
+    .achternaam{
+        width: 300px;
+    }
+
+    .telefoon{
+        width: 300px;
+    }
+
+    .adres{
+        width: 300px;
+    }
+
+    .huisnummer_toevoeging{
+        width: 300px;
+    }
+
+    .email{
+        width: 300px;
+    }
+
+    .datum{
+        width: 300px;
+    }
+
+    .tijd{
+        width: 300px;
+    }
+}

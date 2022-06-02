@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{ 
+background: url(Rent.jpg) no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+width: auto;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+    position: fixedf;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+.logo{
+    font-family: fantasy;
+    font-style: italic;
+}
+
+nav ul{
+
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+
+}
+
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#titel {
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+.hoofdtitel{
+    margin-bottom: 35px;
+}
+
+#hr {
+padding: 0px 400px;
+}
+
+#titel {
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.container1{
+
+    padding: 45px 65px;
+    border-radius: 25px;
+}
+
+#hidden{
+    display: none;
+}
+
+.naam input, .achternaam input, .telefoon input, .email input, .tijd input, .adres input , .huisnummer_toevoeging input {
+    width: 300px;
+    padding: 8px ;
+    border-radius: 10px;    
+}
+
+.naam label, .achternaam label, .telefoon label, .email label , .adres label , .huisnummer_toevoeging label{
+    padding: 5px ;
+    width: 300px;
+    color: white;
+}
+
+.hoofdtitel{
+    margin-bottom: 35px;
+}
+
+.hr {
+padding: 0px 400px;
+}
+
+.naam {
+    display: flex;
+    justify-content: center;
+}
+
+.achternaam {
+    display: flex;
+    justify-content: center;
+}
+
+.telefoon {
+    display: flex;
+    justify-content: center;
+}
+
+.adres {
+    display: flex;
+    justify-content: center;
+}
+
+.huisnummer_toevoeging {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.datum {
+    display: flex;
+    justify-content: center;
+}
+
+#datum {
+    width: 300px;
+}
+
+#breed{
+    width: 305px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.datum label {
+    padding: 5px;
+    color: white;
+}
+
+.tijd {
+    display: flex;
+    justify-content: center;
+}
+
+.tijd input{
+    padding: 5px;
+    padding-left: 15px;
+}
+
+#tijd{
+    width: 290px;
+    color: white;
+    margin-right: 20px;
+}
+
+.fietsentekst{
+    text-align: center;
+    color: white;
+}
+#field{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+fieldset{
+    padding: 15px 50px ;
+    background-color: black;
+    border-radius: 35px;
+    border: 2px solid white;
+}
+
+.fietsen{
+    padding-bottom: 20px;
+}
+
+.fietsen1{
+    display: flex;
+}
+
+.fietsen2{
+    display: flex;
+    display: none;
+}
+.fietsen3 {
+    display: flex;
+    display: none;
+}
+
+.fietsen20:hover .fietsen2 {
+    display: inline;
+    display: flex;
+}
+
+.fietsen20:hover .fietsen3 {
+    display: inline;
+    display: flex;
+}
+
+.radio{
+    display: flex;
+    text-align: center;
+    align-items: center;
+   flex-direction: column;
+   padding: 30px 55px;
+   width: 280px;
+   background-color: white;
+}
+
+.binnen {
+    margin: 10px 0px;
+}
+
+#button{
+    padding: 10px 55px;
+    color: white;
+    background-color: rgb(5, 209, 5);
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 1.5s;
+}
+
+#button:hover{
+    background-color: rgb(4, 136, 4);
+    transition: 1s;
+}
+
+
+#img{
+    height: 125px;
+    width: 200px;
+}
+
+ .checked {
+    color: orange;
+}
+
+.selected {
+    background-color: coral;
+}
+
+@media (max-width: 1048px){
+
+    
+
+    label.logo{
+
+        font-size: 32px;
+
+        padding-left: 60px;
+
+    }
+
+    nav{
+        position: fixed;
+        margin-top: -25px;
+    }
+
+    .container{
+        padding-top: 60px;
+    }
+
+    nav ul{
+
+        margin-right: 20px;
+
+    }
+
+
+
+    nav a{
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+
+@media (max-width: 909px){
+
+    nav #icon{
+
+        display: block;
+
+    }
+
+
+
+    nav ul{
+
+        position: fixed;
+
+        width: 100%;
+
+        height: 100vh;
+
+        background: #2f3640;
+
+        top: 80px;
+
+        left: -100%;
+
+        text-align: center;
+
+        transition: all .5s;
+
+    }
+
+
+
+    nav li{
+
+        display: block;
+
+        margin: 50px 0;
+
+        line-height: 30px;
+
+    }
+
+
+
+    nav a{
+
+
+
+        font-size: 20px;
+
+    }
+
+
+
+    a.active,a:hover{
+
+        border: none;
+
+        color: #3498db;
+
+    }
+
+
+
+   nav ul.show{
+
+       left: 0;
+
+   }
+
+}

@@ -1,0 +1,66 @@
+.hoofd{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: url(Rent.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+.titel{
+    text-align: center;
+}
+
+.deel1, .deel2, .deel3, .deel4, .deel5, .deel6{
+    display: flex;
+    justify-content: center;
+}
+
+.deel1 input, .deel2 input, .deel3 input, .deel4 input, .deel5 input, .deel6 input{
+    border-radius: 10px; 
+    padding: 5px;
+    padding-left: 8px ;
+}
+
+.deel1 label, .deel2 label, .deel3 label, .deel4 label, .deel5 label{
+    width: 150px;
+    padding: 5px;
+}
+
+.hidden{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+a{
+    color: white;
+}
+
+#button{
+    padding: 6px 45px;
+    color: white;
+    background-color: rgb(5, 8, 209);
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 1.5s;
+}
+
+#button:hover{
+    background-color: rgb(4, 23, 110);
+    transition: 1s;
+}
+
+
