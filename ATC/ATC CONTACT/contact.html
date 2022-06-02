@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="ATCCONTACT.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="../ATC HOME/home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+          <a href="../ATC BARDIENST/bardienst.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BARDIENST</a>
+          <a href="../ATC SCHEMA/schema.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SCHEMA</a>
+          <a href="../ATC AANMELD/aanmeld.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AANMELDEN</a>
+          <a id="none" href="../ATC CONTACT/contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+        
+        </div>
+      </div>
+
+      
+      <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="../ATC HOME/home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+        <a href="../ATC BARDIENST/bardienst.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BARDIENST</a>
+        <a href="../ATC SCHEMA/schema.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCHEMA</a>
+        <a href="../ATC AANMELD/aanmeld.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AANMELDEN</a>
+      </div>
+<script>
+      var myIndex = 0;
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  if (myIndex > x.length === myIndex++) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel);    
+}
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+    <div class="con">
+        <div class="hoofd">
+            <div class="hoofd2">
+
+                <div class="hoofd3">
+                    <h1 id="banner-text">ATC!</h1>
+                    <fieldset>
+                        <div class="ruimte">
+                            <div class="geld">
+                                <h3 id="ha">Adres gegevens:</h3>
+                                <p>Adres: Fraijlemaborg 135</p>
+                                <p>Postcode: 1102 CV Amsterdam</p>
+                                <p>Telefoon nummer: 020 579 1111</p>
+                                <p>Email: info@ATCamstelveen.nl</p>
+                            </div>
+                            <div class="hoofd4">
+                                <h3 id="ha">Openingstijden</h3>
+                                <p>Maandag tot Vrijdag: 9:00 - 15:00</p>
+                                <p>Zaterdag tot Zondag: 11:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <a
+                        href="https://www.google.nl/maps/place/Fraijlemaborg+135,+1102+ST+Amsterdam/@52.3155101,4.9448901,17z/data=!3m1!4b1!4m5!3m4!1s0x47c60b917014b5df:0xfb08f365a372cf3c!8m2!3d52.3155068!4d4.947084?hl=nl">
+                        <img id="foto" src="foto1.jpg.png" alt="Click om locatie te bekijken" class="foto1"></a>
+                </div>
+            </div>
+            <form>
+                <div class="main">
+                    <h3 id="kleur">Contact formulier:</h3>
+                    <div class="f1">
+                        <label id="voornaam" for="voornaam">Voornaam:*</label>
+                        <input type="text" id="voornaam" placeholder="" required>
+                    </div>
+                    <hr>
+                    <div class="f2">
+                        <label id="tussenvoeging" for="tussenvoeging">Tussenvoegsels:</label>
+                        <input type="text" id="tussenvoeging" placeholder="">
+                    </div>
+                    <hr>
+                    <div class="f3">
+                        <label id="achternaam" for="achtenaam">Achternaam:*</label>
+                        <input type="text" id="achternaam" placeholder="" required>
+                    </div>
+                    <hr>
+                    <div class="f4">
+                        <label id="email" for="email">Email:*</label>
+                        <input type="email" id="email" placeholder="" required>
+                    </div>
+                    <hr>
+                    <div class="f5">
+                        <label id="adres" for="adres">Adres:*</label>
+                        <input type="text" id="adres" placeholder="" required>
+                    </div>
+                    <hr>
+                    <div class="f5">
+                        <label id="huisnummer" for="huisnummer">Huisnummer:*</label>
+                        <input type="text" id="huisnummer" placeholder="" required>
+                    </div>
+                    <hr>
+                    <div class="f7">
+                        <label id="postcode" for="postcode">Postcode:*</label>
+                        <input type="text" id="postcode" placeholder="" required>
+                    </div>
+                    <hr>
+                    <div class="f8">
+                        <label id="woonplaats" for="woonplaats">Woonplaats:*</label>
+                        <select id="woonplaats">
+                            <option value=""><span style="display: flex; justify-content: center;"></span></option>
+                            <option value="Amsterdam">Amsterdam</option>
+                            <option value="Utrecht">Utrecht</option>
+                            <option value="Rotterdam">Rotterdam</option>
+                            <option value="Den Haag">Den Haag</option>
+                            <option value="Almere">Almere</option>
+                            <option value="Purmerend">Purmerend</option>
+                            <option value="Lelystad">Lelystad</option>
+                            <option value="Zwolle">Zwolle</option>
+                            <option value="Haarlem">Haarlem</option>
+                            <option value="Arnhem">Arnhem</option>
+                            <option value="Assen">Assen</option>
+                            <option value="IJburg">IJburg</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="f9">
+                        <label id="telefoon_nummer" for="telefoon_nummer">Telefoon nr:*</label>
+                        <input type="number" id="telefoon_nummer" placeholder="" required>
+                    </div>
+                    <hr>
+                    <label id="opmerking" for="opmerking">Vragen of opmerkingen:*</label>
+                    <br>
+                    <textarea name="opmerking" id="opmerking1" cols="22" rows="10" required></textarea>
+                    <br>
+                    <div class="verzend">
+                        <button id="verzenden" type="submit">Verzenden</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>

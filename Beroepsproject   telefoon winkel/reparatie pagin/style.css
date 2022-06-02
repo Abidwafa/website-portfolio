@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+table {
+    width: 980px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: space-between;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    
+
+}
+
+td {
+    padding-left: 60px;
+    padding-right: 20px;
+    height: 60px;
+    font-size: 17px;
+}
+
+tr {
+    border: 10px solid #c3f5ff ;
+    border-collapse: collapse;
+    
+}
+
+
+body{
+    background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+    width: auto;  
+    font-style: italic;
+   
+}
+
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+.navsection{
+    width: : 100%; height: 20vh; background-color: yellow;
+    display: flex; justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+    font-style: normal;
+}
+ 
+.logo{
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+ 
+.logo h1{
+     text-transform: uppercase;
+     font-size: 1.6rem;
+     animation: aagepiche 2s linear infinite;
+     animation-direction: alternate;
+}
+ 
+@keyframes aagepiche{
+    from{ padding-left: 40px; }
+    to { padding-right: 40px; }
+}
+ 
+nav{
+    width: 60%;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: space-around;
+    
+}
+ 
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+ 
+nav a:first-child{
+    color: #4458dc;
+}
+ 
+nav a:before{
+    content: "";
+    position:absolute;
+    top: 110%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+}
+ 
+nav a:hover:before{
+    width: 100%;
+}  
+
+
+h6{
+    display: inline-block;
+    text-transform: uppercase;
+    transform: scaleY(1.5);
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 40%;
+    padding-bottom: 12%;
+
+    
+    
+
+}
+   
+
+
+
+    
+
+
+@media screen and (max-width: 980px) {
+   
+    
+
+    h6{
+       transform: scaleY(1.5);
+       font-style: italic;
+       margin-left: 30%;
+       margin-top: 40px;
+        font-size: 2rem;
+        
+    
+}
+
+table{
+
+   
+    width: 680px;
+    border: 1Px solid black;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 20%;
+    padding-top: 0%;
+    margin-top: 100px;   
+    flex-direction: row; 
+    
+    
+}
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+
+  body{
+    background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+
+
+    width: auto; 
+
+}
+
+
+  td {
+        padding-left: 6px;
+        padding-right: 20px;
+        height: 60px;
+        font-size: 17px;
+
+        
+}
+    
+    tr {
+        border: 10px solid #aad1d1 ;
+        border-collapse: collapse;
+    }
+
+
+nav{
+    padding-top: 100px;
+    position: absolute;
+    margin-right: 0px;
+    width: 90%;
+
+
+    
+
+
+    
+}
+
+.logo{
+    width: 980px;
+    margin-right: auto;
+
+    margin-right: auto;   
+
+}
+
+.logo h1 {
+    text-align: center;
+    width: 500px;
+    margin-left: 0px;
+
+    
+
+}
+
+
+
+}

@@ -1,0 +1,312 @@
+    body {
+        color: white;
+        background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        padding-bottom: 20px;
+        width: auto;
+        font-style: italic;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navsection {
+        font-style: normal;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+    }
+    
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 900;
+        font-size: 17px;
+        position: relative;
+    }
+    
+    nav a:first-child {
+        color: #4458dc;
+    }
+    
+    nav a:before {
+        content: "";
+        position: absolute;
+        top: 110%;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        border-bottom: 2px solid #4458dc;
+        transition: all 0.4s linear;
+    }
+    
+    nav a:hover:before {
+        width: 100%;
+    }
+    
+    
+    .logo {
+        width: 40%;
+        color: #fff;
+        background-image: linear-gradient(#8d98e3 60%, #854fee 60%);
+        padding-left: 100px;
+        box-sizing: border-box;
+
+    }
+    
+    .logo h1 {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        animation: aagepiche 2s linear infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes aagepiche {
+        from {
+            padding-left: 40px;
+        }
+        to {
+            padding-right: 40px;
+        }
+    }
+    
+    .info {
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .info1 {
+        font-size: 17px;
+    }
+    
+    .foto1 {
+        height: 400px;
+        width: 800px;
+        padding-top: 20px;
+    }
+    
+    .info2 {
+        padding-left: 40px;
+    }
+    
+    #kleur {
+        color:;
+        padding-bottom: 10px;
+    }
+    
+    .idk {
+        text-align: center;
+    }
+    
+    #kleur1 {
+        color: black;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #hoofd {
+        color: black;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .form {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+    
+    input {
+        border-radius: 90px;
+        height: 20px;
+        width: 300px;
+        padding-left: 10px;
+        border: solid black 1px;
+    }
+    
+    
+    .yes {
+        display: inline-block;
+        background:linear-gradient(#8d98e3 60%, #854fee 60%);
+        color: #fff;
+        margin: 30px 0;
+        margin-top: -8px;
+        border-radius: 30px;
+        transition: background 0.5s;
+    }
+
+    .yes:hover{
+        background: #563434;
+        color: #fff;
+    }
+    
+
+    
+    #ruimte {
+        margin-right: 100px;
+    }
+    
+    #ruimte1 {
+        margin-right: 99px;
+    }
+    #tel {
+        margin-left: 30px;
+    }
+    
+    textarea {
+        padding-left: 10px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        background-color: rgba(211, 211, 211, 0.151);
+        color: white;
+        border: solid black 1px;
+        position: static;
+    }
+    
+    p {
+        color: black;
+    }
+    
+    #wat {
+        width: 600px;
+        text-align: center;
+    }
+    
+    #id1 {
+        color:;
+        padding-bottom: 10px;
+    }
+    
+    #kleur2 {
+        color: ;
+        margin-bottom: -10px;
+    }
+    
+    #kleur3 {
+        color: black;
+        padding-bottom: 10px;
+    }
+    
+    #wat {
+        padding-bottom: 20px;
+    }
+    
+    .wat1 {
+        display: flex;
+        justify-content: center;
+    }
+    .info3{
+        color: black;
+        width: 250px;
+    }
+    .space{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    @media screen and (max-width: 1400px) {
+        body {
+            background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+            width: auto;
+        }
+        .logo {
+            width: 1483px;
+        }
+        .logo h1 {
+            text-align: center;
+        }
+        .info1 {
+            position: absolute;
+        }
+        .info3 {
+            margin-top: 650px;
+        }
+        #hoofd {
+            padding-top: 100px;
+        }
+        .info {
+            padding-top: 0px;
+        }
+        .info3 {
+            margin-left: 130px;
+        }
+        .form {
+            text-align: center;
+        }
+
+        nav {
+            padding-top: 120px;
+            position: absolute;
+            width: 100%;
+        }
+        #id1 {
+            display: flex;
+            justify-content: center;
+        }
+        .open{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        body {
+            background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+            width: auto;
+        }
+        .info1 {
+            position: absolute;
+        }
+        #hoofd {
+            padding-top: 100px;
+        }
+        .info {
+            padding-top: 0px;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+        nav {
+            padding-top: 120px;
+            position: absolute;
+            width:100%;
+        }
+        .logo {
+            width: 956px;
+        }
+        .logo h1 {
+            text-align: center;
+        }
+        .foto1 {
+            height: 330px;
+            width: 600px;
+        }
+        #id1 {
+            display: flex;
+            justify-content: center;
+        }
+    }

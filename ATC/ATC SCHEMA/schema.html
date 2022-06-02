@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Amstelveen Tennis club!</title>
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="../ATC HOME/home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+          <a id="none" href="../ATC BARDIENST/bardienst.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BARDIENST</a>
+          <a href="../ATC SCHEMA/schema.html" class="w3-bar-item w3-button w3-padding-large">SCHEMA</a>
+          <a href="../ATC AANMELD/aanmeld.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AANMELDEN</a>
+          <a href="../ATC CONTACT/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        
+        </div>
+      </div>
+
+      
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="../Homepage/home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+        <a href="../ATC BARDIENST/bardienst.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BARDIENST</a>
+        <a href="../ATC AANMELD/aanmeld.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AANMELDEN</a>
+        <a href="../ATC CONTACT/contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+      </div>
+<script>
+      var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<div class="banner-text">
+  <h1>ATC!</h1>
+  <h2>Toernooi resultaten vorig jaar.</h2>
+  
+</div>
+
+<div class="container">
+  <div class="tournament-bracket tournament-bracket--rounded">                                                     
+    <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
+      <h3 class="tournament-bracket__round-title">Kwartfinales Vorig Jaar</h3>
+      <ul class="tournament-bracket__list">
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-18">15 Augustus 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Canada">Team A</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-ca" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">3</span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Kazakhstan">Team B</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-kz" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">2</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-18">15 Augustus 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Czech Republic">Team C</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-cz" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">4</span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Unitede states of America">Team D</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-us" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">2</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-18">15 Augustus 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Finland">Team E</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-fi" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">5</span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Sweden">Team F</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-se" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">3</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-18">15 Augustus 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Russia">Team G</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-ru" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">2</span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Belarus">Team H</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-by" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">1</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="tournament-bracket__round tournament-bracket__round--semifinals">
+      <h3 class="tournament-bracket__round-title"> Halve finales vorig jaar</h3>
+      <ul class="tournament-bracket__list">
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-20">23 Augustus 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Canada">Team A</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-ca" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">1</span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Czech Republic">Team C</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-cz" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">2</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-20">23 Augustus 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Finland">Team E</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-fi" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">4</span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Russia">Team G</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-ru" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">7</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="tournament-bracket__round tournament-bracket__round--bronze">
+      <h3 class="tournament-bracket__round-title">Bronzen Medaillewedstrijd Vorig Jaar</h3>
+      <ul class="tournament-bracket__list">
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-21">22 November 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Finland">Team C</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-fi" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">3</span>
+                    <span class="tournament-bracket__medal tournament-bracket__medal--bronze fa fa-trophy" aria-label="Bronze medal"></span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Canada">Team G</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-ca" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">2</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="tournament-bracket__round tournament-bracket__round--gold">
+      <h3 class="tournament-bracket__round-title">Vorig jaar gouden medaille spel</h3>
+      <ul class="tournament-bracket__list">
+        <li class="tournament-bracket__item">
+          <div class="tournament-bracket__match" tabindex="0">
+            <table class="tournament-bracket__table">
+              <caption class="tournament-bracket__caption">
+                <time datetime="1998-02-22">22 November 2020</time>
+              </caption>
+              <thead class="sr-only">
+                <tr>
+                  <th>Country</th>
+                  <th>Score</th>
+                </tr>
+              </thead>  
+              <tbody class="tournament-bracket__content">
+                <tr class="tournament-bracket__team tournament-bracket__team--winner">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Czech Republic">Team Z</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-cz" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">1</span>
+                    <span class="tournament-bracket__medal tournament-bracket__medal--gold fa fa-trophy" aria-label="Gold medal"></span>
+                  </td>
+                </tr>
+                <tr class="tournament-bracket__team">
+                  <td class="tournament-bracket__country">
+                    <abbr class="tournament-bracket__code" title="Russia">Team Y</abbr>
+                    <span class="tournament-bracket__flag flag-icon flag-icon-ru" aria-label="Flag"></span>
+                  </td>
+                  <td class="tournament-bracket__score">
+                    <span class="tournament-bracket__number">0</span>
+                    <span class="tournament-bracket__medal tournament-bracket__medal--silver fa fa-trophy" aria-label="Silver medal"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+    
+</body>
+
+</html>

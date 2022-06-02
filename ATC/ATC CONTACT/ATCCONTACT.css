@@ -1,0 +1,393 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.5),#0096),url(Banner.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+
+}
+html {
+    width: auto;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG72wNJHMw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+#foto {
+    margin-top: 30px;
+    width: 620px;
+    height: 310px;
+}
+
+.hoofd{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: auto;
+}
+
+#banner-text{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+#ha {
+    margin-bottom: 10px;
+}
+.hoofd3{
+    margin-top: 82px;
+    background: white;
+    padding: 20px 50px 20px 50px;
+    width: auto;
+}
+.geld {
+    padding: 15px 15px 15px 15px;
+}
+.hoofd4 {
+    padding: 15px 15px 15px 15px;
+    margin-left: 13px;
+    
+}
+.ruimte {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    background-color: white;
+    padding: 20px 50px 20px 50px;
+    width: auto;
+
+}
+#kleur {
+    color: red;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 82px;
+    margin-bottom: 25px;
+    width: auto;
+}
+.f1 {
+    display: flex;
+    justify-content: center;
+}
+.f2 {
+    display: flex;
+    justify-content: center;
+}
+.f3 {
+    display: flex;
+    justify-content: center;
+}
+.f4 {
+    display: flex;
+    justify-content: center;
+}
+.f5 {
+    display: flex;
+    justify-content: center;
+}
+.f6 {
+    display: flex;
+    justify-content: center;
+}
+.f7 {
+    display: flex;
+    justify-content: center;
+}
+.f8 {
+    display: flex;
+    justify-content: center;
+}
+.f9 {
+    display: flex;
+    justify-content: center;
+}
+.f10 {
+    display: flex;
+    justify-content: center;
+}
+#voornaam{
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#email{
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#tussenvoeging {
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#achternaam{
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#adres {
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#huisnummer{
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#woonplaats {
+    width: 157px;
+    height: 26px;
+    padding-left: 5px;
+}
+#postcode {
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#telefoon_nummer{
+    width: 157px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#opmerking {
+    display: flex;
+    justify-content: center;
+}
+#opmerking1{
+    width: 470px;
+    height: 80px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+#verzenden {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 0, 0.301);
+}
+.we {
+    display: flex;
+    justify-content: center;
+}
+.verzend {
+    display: flex;
+    justify-content: center;
+}
+#verzenden:hover{
+    background-color: rgba(255, 0, 0, 0.267);
+    transition: 1s;
+}
+#none {
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 1450px) {
+    html {
+        width: auto;
+    }
+    form {
+        position: absolute;
+        margin-top: 900px;
+    }
+    .con {
+        display: flex;
+        justify-content: center;
+    }
+    #kleur {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .main {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 860px) {
+    html {
+        width: auto;
+    }
+    .hoofd3 {
+        font-size: 12px;
+        padding: 20px 50px 20px 50px;
+    }
+    #foto {
+        width: 550px;
+        height: 280px;
+    }
+    .main {
+        padding: 20px 50px 20px 50px;
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    #ha {
+        font-size: 18px;
+    }
+    #kleur {
+        font-size: 18px;
+    }
+    #woonplaats{
+        height: 21px;
+    }
+    form {
+        margin-top: 790px;
+    }
+    #banner-text {
+        font-size: 100px;
+    }
+    #opmerking1{
+        width: 430px;
+        height: 80px;
+        padding: 5px 10px 10px 10px;
+    }
+@media screen and (max-width: 700px) {
+    html{
+        width: auto;
+    }
+    .hoofd3 {
+        font-size: 10px;
+        padding: 10px 25px 10px 25px;
+    }
+    #foto {
+        width: 450px;
+        height: 225px;
+    }
+    #banner-text{
+        font-size: 80px;
+        margin-top: 1px;
+    }
+    #ha {
+        font-size: 16px;
+    }
+    #opmerking1{
+        width: 340px;
+        padding: 5px 10px 10px 10px;
+    }
+    #woonplaats {
+        height: 20px;
+    }
+    form {
+        margin-top: 650px;
+    }
+    .f1 {
+        font-size: 10px;
+    }
+    .f2 {
+        font-size: 10px;
+    }
+    .f3 {
+        font-size: 10px;
+    }
+    .f4 {
+        font-size: 10px;
+    }
+    .f5 {
+        font-size: 10px;
+    }
+    .f6 {
+        font-size: 10px;
+    }
+    .f7 {
+        font-size: 10px;
+    }
+    .f8 {
+        font-size: 10px;
+    }
+    .f9 {
+        font-size: 10px;
+    }
+    .f10 {
+        font-size: 10px;
+    }
+    #opmerking{
+        font-size: 10px;
+    }
+    #opmerking1 {
+        font-size: 10px;
+    }
+    #verzenden {
+        font-size: 10px
+    }
+}
+@media screen and (max-width: 630px) {
+    html{
+        width: auto;
+    }
+    #none{
+    display: none;
+    }
+}
+}
+@media screen and (max-width: 600px) {
+    html {
+        width: auto;
+    }
+    #none{
+        display: grid;
+    }
+}
+@media screen and (max-width: 520px) {
+html {
+    width: auto;
+}
+#foto {
+    width: 390px;
+    height: 200px;
+}
+form{
+    margin-top: 670px;
+}
+.main{
+    padding: 10px 25px 10px 25px;
+}
+}
+@media screen and (max-width: 490px) {
+    html {
+        width: auto;
+    }
+    .hoofd3 {
+        background-color: black;
+    }
+}
+@media screen and (max-width: 523px) {
+    .hoofd4 {
+        width: 150px;
+    }
+    .hoofd4 {
+        text-align: center;
+    }
+    form{
+        margin-top: 630px;
+    }
+}

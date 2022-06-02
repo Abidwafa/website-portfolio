@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="ATCAANMELD.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Aanmeld</title>
+</head>
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="../ATC HOME/home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+      <a href="../ATC BARDIENST/bardienst.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BARDIENST</a>
+      <a href="../ATC SCHEMA/schema.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SCHEMA</a>
+      <a id="none" href="../ATC AANMELD/aanmeld.html" class="w3-bar-item w3-button w3-padding-large">AANMELDEN</a>
+      <a href="../ATC CONTACT/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+
+    </div>
+  </div>
+
+
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="../ATC HOME/home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+    <a href="../ATC BARDIENST/bardienst.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BARDIENST</a>
+    <a href="../ATC SCHEMA/schema.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCHEMA</a>
+    <a href="../ATC CONTACT/contact.html" class="w3-bar-item w3-button w3-padding-large"
+      onclick="myFunction()">CONTACT</a>
+  </div>
+  <script>
+    var myIndex = 0;
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      if (myIndex > x.length === myIndex++) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel);
+    }
+
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <div class="mid">
+  <div class="hoofd">
+    <div class="hoofd1">
+  <form class="form1">
+      <div class="main">
+        <h1 id="banner-text">ATC!</h1>
+        <div>
+          <h3 id="kleur">Registreren:</h3>
+        </div>
+        <div class="f12">
+          <label id="gebruiksnaam1" for="voornaam">Gebruiksnaam:*</label>
+          <input type="text" id="gebruiksnaam" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f13">
+          <label id="wachtwoord1" for="wachtwoord">Wachtwoord:*</label>
+          <input type="password" id="wachtwoord" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f13">
+          <label id="wachtwoord1" for="wachtwoord">Wachtwoord bevestigen:*</label>
+          <input type="password" id="wachtwoord" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f1">
+          <label id="voornaam1" for="voornaam">Voornaam:*</label>
+          <input type="text" id="voornaam" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f2">
+          <label id="tussenvoeging1" for="tussenvoeging">Tussenvoegsels:</label>
+          <input type="text" id="tussenvoeging" placeholder="">
+        </div>
+        <hr class="new4">
+        <div class="f3">
+          <label id="achternaam1" for="achtenaam">Achternaam:*</label>
+          <input type="text" id="achternaam" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f4">
+          <label id="email1" for="email">Email:*</label>
+          <input type="email" id="email" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f5">
+          <label id="adres1" for="adres">Adres:*</label>
+          <input type="text" id="adres" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f5">
+          <label id="huisnummer1" for="huisnummer">Huisnummer:*</label>
+          <input type="text" id="huisnummer" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f7">
+          <label id="postcode1" for="postcode">Postcode:*</label>
+          <input type="text" id="postcode" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f8">
+          <label id="woonplaats1" for="woonplaats">Woonplaats:*</label>
+          <select id="woonplaats">
+            <option value=""><span style="display: flex; justify-content: center;"></span></option>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Utrecht">Utrecht</option>
+            <option value="Rotterdam">Rotterdam</option>
+            <option value="Den Haag">Den Haag</option>
+            <option value="Almere">Almere</option>
+            <option value="Purmerend">Purmerend</option>
+            <option value="Lelystad">Lelystad</option>
+            <option value="Zwolle">Zwolle</option>
+            <option value="Haarlem">Haarlem</option>
+            <option value="Arnhem">Arnhem</option>
+            <option value="Assen">Assen</option>
+            <option value="IJburg">IJburg</option>
+          </select>
+        </div>
+        <hr class="new4">
+        <div class="f9">
+          <label id="telefoon_nummer1" for="telefoon_nummer">Telefoon nr:*</label>
+          <input type="number" id="telefoon_nummer" placeholder="" required>
+        </div>
+        <hr class="new4">
+        <div class="f10">
+          <label>Gebruikt u medicijnen?</label>
+        </div>
+        <br class="new4">
+        <div class="f11">
+          <div>
+            <input type="radio" id="Nee" name="drone" value="Nee">
+            <label id="idk" for="Nee">Ja</label>
+          </div>
+          <div>
+            <input type="radio" id="Ja" name="drone" value="Ja">
+            <label for="Ja">Nee</label>
+          </div>
+        </div>
+
+        <hr class="new4">
+        <label id="opmerking" for="opmerking">Zo ja welke?</label>
+        <br>
+        <textarea name="opmerking" id="opmerking1" cols="22" rows="10" required></textarea>
+        <br>
+        <div class="we">
+          <button id="verzenden" type="submit">Registreren</button>
+        </div>
+      </div>
+  </form>
+</div>
+<div class="div">
+  <form class="form2">
+    <div class="kom">
+    <h3 id="kleur">Inloggen:</h3>
+    <div class="h1">
+      <label id="gebruik" for="gebruiksnaam">Gebruiksnaam:</label>
+      <input type="text" id="gebruik1" placeholder="" required>
+    </div>
+    <hr class="new4">
+    <div class="h2">
+    <label id="wacht" for="wachtwoord">Wachtwoord:</label>
+    <input type="password" id="wacht1" placeholder="" required>
+  </div>
+  <br>
+  <div class="veel">
+    <a href="#">Gebruiksnaam vergeten</a>
+    <a id="a" href="#">Wachtwoord vergeten</a>
+  </div>
+  <div class="we">
+    <button id="inlog">Inloggen</button>
+  </div>
+  </div>
+  </form>
+</div>
+  </div>
+</div>
+</div>
+</body>
+
+</html>
